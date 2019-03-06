@@ -1,0 +1,2 @@
+class BodyCorrelation < ApplicationRecord
+end
