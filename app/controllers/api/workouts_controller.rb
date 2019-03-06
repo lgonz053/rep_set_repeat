@@ -1,5 +1,4 @@
 class Api::WorkoutsController < ApplicationController
-
   def index
     @workouts = current_user.workouts
     render 'index.json.jbuilder'

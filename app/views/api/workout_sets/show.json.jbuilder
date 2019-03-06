@@ -1,0 +1,1 @@
+json.partial! @workout_set, partial: 'workout_set', as: :workout_set
