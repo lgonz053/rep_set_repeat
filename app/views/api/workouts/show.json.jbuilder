@@ -1,0 +1,1 @@
+json.array! @workout, partial: 'workout', as: :workout
