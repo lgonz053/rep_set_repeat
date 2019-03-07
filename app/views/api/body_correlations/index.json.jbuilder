@@ -1,0 +1,1 @@
+json.array! @body_correlations, partial: 'body_correlation', as: :body_correlation

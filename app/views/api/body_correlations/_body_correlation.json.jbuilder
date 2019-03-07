@@ -1,0 +1,3 @@
+json.id body_correlation.id
+json.body_part body_correlation.body_part
+json.exercise_id body_correlation.exercise_id
