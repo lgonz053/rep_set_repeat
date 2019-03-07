@@ -1,0 +1,1 @@
+json.partial! @body_part, partial: 'body_part', as: :body_part
