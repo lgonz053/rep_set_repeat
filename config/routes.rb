@@ -21,5 +21,11 @@ Rails.application.routes.draw do
     get "/exercises/:id" => "exercises#show"
     patch "/exercises/:id" => "exercises#update"
     delete "/exercises/:id" => "exercises#destroy"
+
+    get "/body_correlations" => "body_correlations#index"
+    post "/body_correlations" => "body_correlations#create"
+    get "/body_correlations/:id" => "body_correlations#show"
+    patch "/body_correlations/:id" => "body_correlations#update"
+    delete "/body_correlations/:id" => "body_correlations#destroy"
   end
 end
