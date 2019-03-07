@@ -6,12 +6,12 @@ class Api::WorkoutSetsController < ApplicationController
 
   def create
     @workout_set = WorkoutSet.new(
-                                    workout_id: params[:workout_id],
-                                    exercise_id: params[:exercise_id],
-                                    groups: params[:groups],
-                                    reps: params[:reps],
-                                    weight: params[:weight],
-                                    total_volume: params[:total_volume]
+                                  workout_id: params[:workout_id],
+                                  exercise_id: params[:exercise_id],
+                                  groups: params[:groups],
+                                  reps: params[:reps],
+                                  weight: params[:weight],
+                                  total_volume: params[:total_volume]
                                   )
 
     if @workout_set.save

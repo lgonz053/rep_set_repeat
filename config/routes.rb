@@ -15,5 +15,11 @@ Rails.application.routes.draw do
     get "/workout_sets/:id" => "workout_sets#show"
     patch "/workout_sets/:id" => "workout_sets#update"
     delete "/workout_sets/:id" => "workout_sets#destroy"
+
+    get "/exercises" => "exercises#index"
+    post "/exercises" => "exercises#create"
+    get "/exercises/:id" => "exercises#show"
+    patch "/exercises/:id" => "exercises#update"
+    delete "/exercises/:id" => "exercises#destroy"
   end
 end

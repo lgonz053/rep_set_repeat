@@ -6,10 +6,10 @@ class Api::WorkoutsController < ApplicationController
 
   def create
     @workout = Workout.new(
-                      user_id: current_user.id,
-                      muscle_group: params[:muscle_group],
-                      time_limit: params[:time_limit]
-                    )
+                          user_id: current_user.id,
+                          muscle_group: params[:muscle_group],
+                          time_limit: params[:time_limit]
+                          )
 
     if @workout.save
       render 'show.json.jbuilder'
