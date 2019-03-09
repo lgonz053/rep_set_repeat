@@ -4,4 +4,5 @@ class User < ApplicationRecord
 
   has_many :workouts
   has_many :workout_sets, through: :workouts
+  has_many :exercises, through: :workout_sets
 end
