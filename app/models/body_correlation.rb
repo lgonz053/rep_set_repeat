@@ -1,4 +1,4 @@
 class BodyCorrelation < ApplicationRecord
-  belong_to :exercise
-  belong_to :body_part
+  belongs_to :exercise
+  belongs_to :body_part
 end
