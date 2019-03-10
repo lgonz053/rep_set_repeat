@@ -1,1 +1,1 @@
-json.array! @workout_sets, partial: 'workout_sets', as: :workout_sets
+json.array! @workout_sets, partial: 'workout_set', as: :workout_set
