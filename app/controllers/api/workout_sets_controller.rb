@@ -10,8 +10,7 @@ class Api::WorkoutSetsController < ApplicationController
                                   exercise_id: params[:exercise_id],
                                   groups: params[:groups],
                                   reps: params[:reps],
-                                  weight: params[:weight],
-                                  total_volume: params[:total_volume]
+                                  weight: params[:weight]
                                   )
 
     if @workout_set.save
