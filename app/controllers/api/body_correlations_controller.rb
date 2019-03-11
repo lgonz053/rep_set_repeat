@@ -1,4 +1,5 @@
 class Api::BodyCorrelationsController < ApplicationController
+
   def index
     @body_correlations = BodyCorrelation.all
     render 'index.json.jbuilder'
