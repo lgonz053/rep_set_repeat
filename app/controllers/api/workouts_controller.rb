@@ -1,5 +1,5 @@
 class Api::WorkoutsController < ApplicationController
-  # before_action :authenticate_user
+  before_action :authenticate_user
 
   def index
     @workouts = current_user.workouts
