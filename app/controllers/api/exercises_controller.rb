@@ -1,6 +1,6 @@
 class Api::ExercisesController < ApplicationController
   def index
-    @exercises = Exercise.all
+    @exercises = Exercise.all.order(:name)
     render 'index.json.jbuilder'
   end
 

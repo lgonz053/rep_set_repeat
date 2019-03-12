@@ -1,6 +1,6 @@
 class Api::WorkoutSetsController < ApplicationController
   def index
-    @workouts_sets = WorkoutSet.all
+    @workout_sets = WorkoutSet.all
     render 'index.json.jbuilder'
   end
 

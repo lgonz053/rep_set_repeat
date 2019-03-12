@@ -7,7 +7,3 @@ json.created_at workout.created_at
 json.workout_sets do
   json.array! workout.workout_sets, partial: 'api/workout_sets/workout_set', as: :workout_set
 end
-
-json.exercises do
-  json.array! workout.exercises, partial: 'api/exercises/exercise', as: :exercise
-end
