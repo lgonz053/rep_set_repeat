@@ -37,7 +37,7 @@ class Api::BodyCorrelationsController < ApplicationController
   end
 
   def destroy
-    body_correlation = body_correlation.find(params[:id])
+    body_correlation = BodyCorrelation.find(params[:id])
     body_correlation.destroy
     render json: {message: "Successfully removed body_correlation"}
   end

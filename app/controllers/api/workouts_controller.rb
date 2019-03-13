@@ -39,7 +39,7 @@ class Api::WorkoutsController < ApplicationController
   end
 
   def destroy
-    workout = workout.find(params[:id])
+    workout = Workout.find(params[:id])
     workout.destroy
     render json: {message: "Successfully removed workout"}
   end

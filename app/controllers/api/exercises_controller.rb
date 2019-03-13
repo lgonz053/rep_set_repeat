@@ -37,7 +37,7 @@ class Api::ExercisesController < ApplicationController
   end
 
   def destroy
-    exercise = exercise.find(params[:id])
+    exercise = Exercise.find(params[:id])
     exercise.destroy
     render json: {message: "Successfully removed exercise"}
   end

@@ -36,7 +36,7 @@ class Api::BodyPartsController < ApplicationController
   end
 
   def destroy
-    body_part = body_part.find(params[:id])
+    body_part = BodyPart.find(params[:id])
     body_part.destroy
     render json: {message: "Successfully removed body_part"}
   end
