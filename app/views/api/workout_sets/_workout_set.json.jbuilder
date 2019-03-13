@@ -1,4 +1,5 @@
-json.workout_id workout_set.id
+json.id workout_set.id
+json.workout_id workout_set.workout_id
 json.exercise_id workout_set.exercise_id
 json.groups workout_set.groups
 json.reps workout_set.reps

@@ -41,7 +41,7 @@ class Api::WorkoutSetsController < ApplicationController
   end
 
   def destroy
-    workout_set = workout_set.find(params[:id])
+    workout_set = WorkoutSet.find(params[:id])
     workout_set.destroy
     render json: {message: "Successfully removed workout_set"}
   end
