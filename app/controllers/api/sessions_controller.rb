@@ -5,7 +5,7 @@ class Api::SessionsController < ApplicationController
       jwt = JWT.encode(
         {
           user_id: user.id, 
-          exp: 24.hours.from_now.to_i 
+          exp: 3.weeks.from_now.to_i 
         },
         Rails.application.credentials.fetch(:secret_key_base),
         'HS256'
