@@ -9,5 +9,7 @@ json.workout_sets do
 end
 
 json.formatted do
-  json.time_limit workout.friendly_time_limit
+  if workout.time_limit
+    json.time_limit workout.friendly_time_limit
+  end
 end 
