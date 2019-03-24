@@ -1,4 +1,6 @@
 class Api::WorkoutSetsController < ApplicationController
+  before_action :authenticate_user
+  
   def index
     @workout_sets = WorkoutSet.all
     render 'index.json.jbuilder'

@@ -1,4 +1,6 @@
 class Api::ExercisesController < ApplicationController
+  before_action :authenticate_user 
+
   def index
     @exercises = Exercise.all.order(:name)
     render 'index.json.jbuilder'

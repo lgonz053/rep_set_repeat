@@ -5,6 +5,8 @@ class Workout < ApplicationRecord
   has_many :body_correlations, through: :exercises
   has_many :body_parts, through: :body_correlations
 
+  validates :time_limit, presence: true, numericality: { greater_than: 0 }
+
   enum muscle_group: { Legs: 1, Chest: 2, Back: 3, Shoulders: 4, Biceps: 5, Triceps: 6, Abs: 7, Cardio: 8 }
 
   def friendly_time_limit
