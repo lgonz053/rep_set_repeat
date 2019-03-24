@@ -8,8 +8,8 @@ json.workout_sets do
   json.array! workout.workout_sets, partial: 'api/workout_sets/workout_set', as: :workout_set
 end
 
-json.formatted do
-  if workout.time_limit
+if workout.time_limit
+  json.formatted do
     json.time_limit workout.friendly_time_limit
   end
-end 
+end
