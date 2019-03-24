@@ -34,4 +34,6 @@ Rails.application.routes.draw do
     patch "/body_parts/:id" => "body_parts#update"
     delete "/body_parts/:id" => "body_parts#destroy"
   end
+
+  get "/*path" => proc { [200, {}, [ActionView::Base.new.render(file: 'public/index.html')]] }
 end
