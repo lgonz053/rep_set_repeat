@@ -3,7 +3,8 @@ class Api::WorkoutsController < ApplicationController
 
   def index
     @workouts = current_user.workouts
-    @workouts = @workouts.order(:created_at =>:asc)
+
+    @workouts = @workouts.order(:created_at => :desc)
     render 'index.json.jbuilder'
   end
 
