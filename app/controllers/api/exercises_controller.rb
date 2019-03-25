@@ -1,5 +1,7 @@
 class Api::ExercisesController < ApplicationController
-  before_action :authenticate_user 
+  before_action :authenticate_user
+  before_action :authenticate_admin, only: [:destroy]
+
 
   def index
     @exercises = Exercise.all.order(:name)
