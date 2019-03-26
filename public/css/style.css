@@ -102,7 +102,7 @@ a, a:focus, a:active, a:link, img {
 a {
     cursor: pointer;
     text-decoration: none;
-    color: #323232;
+    color: white;
     transition: all 0.25s ease 0s;
     -moz-transition: all 0.25s ease 0s;
     -webkit-transition: all 0.25s ease 0s;
@@ -191,6 +191,7 @@ p {
 }
 
     p.lead, .lead {
+        color: white;
         font-size: 16px;
         font-weight: 400;
         line-height: 24px;
@@ -338,6 +339,7 @@ h6 {
     letter-spacing: 2px;
     line-height: 17px;
     font-weight: 600;
+    color: white;
 }
 
 h1.large {
@@ -739,9 +741,10 @@ form label.error {
 }
 
 .ptb-60 {
+    background-color: black;
     position: absolute;
     padding-top: 30px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
 }
 
 .pt-60 {
@@ -2149,7 +2152,7 @@ form label.error {
     }
 
     .footer .footer-info p {
-        color: #323232;
+        color: white;
     }
 
 .footer-logo {
@@ -2195,6 +2198,7 @@ form label.error {
 }
 
 .footer .copyright {
+    position: relative;
     text-align: center;
 }
 
@@ -3628,17 +3632,17 @@ form label.error {
         display: inline-block;
     }
 
-    .item-box:hover .item-mask {
+    .item-box .item-mask {
         opacity: 1;
         visibility: visible;
     }
 
-        .item-box:hover .item-mask .item-caption {
+        .item-box .item-mask .item-caption {
             bottom: 30px;
             opacity: 1;
         }
 
-    .item-box:hover .item-container {
+    .item-box .item-container {
         transform: scale(1.1);
         transition: all 2s cubic-bezier(0.23, 1, 0.32, 1) 0s;
         width: 100%;
